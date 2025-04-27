@@ -1,3 +1,8 @@
+@extends('layouts.app')
+
+@section('title', 'Beranda')
+
+@section('content')
 <h2>Hapus Karyawan</h2>
 
 <p>Apakah kamu yakin ingin menghapus data karyawan berikut?</p>
@@ -15,3 +20,4 @@
     <button type="submit">Ya, Hapus</button>
     <a href="/karyawan">Batal</a>
 </form>
+@endsection

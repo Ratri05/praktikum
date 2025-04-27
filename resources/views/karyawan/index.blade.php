@@ -1,3 +1,8 @@
+@extends('layouts.app')
+
+@section('title', 'Beranda')
+
+@section('content')
 <h2>Daftar Karyawan</h2>
 <a href="/karyawan/create">Tambah Karyawan</a>
 <ul>
@@ -10,3 +15,4 @@
         </li>
     @endforeach
 </ul>
+@endsection

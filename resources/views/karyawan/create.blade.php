@@ -1,3 +1,8 @@
+@extends('layouts.app')
+
+@section('title', 'Beranda')
+
+@section('content')
 <h2>Tambah Karyawan</h2>
 <form action="/karyawan" method="POST">
     @csrf
@@ -8,3 +13,4 @@
     Alamat: <input name="alamat"><br>
     <button type="submit">Simpan</button>
 </form>
+@endsection

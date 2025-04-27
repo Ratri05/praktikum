@@ -1,3 +1,8 @@
+@extends('layouts.app')
+
+@section('title', 'Beranda')
+
+@section('content')
 <h2>Edit Karyawan</h2>
 <form action="/karyawan/{{ $karyawan['id'] }}" method="POST">
     @csrf
@@ -8,3 +13,4 @@
     Alamat: <input name="alamat" value="{{ $karyawan['alamat'] }}"><br>
     <button type="submit">Update</button>
 </form>
+@endsection
